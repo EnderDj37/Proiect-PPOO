@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Initial commit">
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Implementat clasa Produs">
+      <change afterPath="$PROJECT_DIR$/src/ProdusService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,8 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SHOW_RECENT_BRANCHES" value="false" />
+    <option name="SHOW_TAGS" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -66,7 +68,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -89,7 +91,8 @@
       <workItem from="1762278332825" duration="390000" />
       <workItem from="1762278796411" duration="408000" />
       <workItem from="1762373992776" duration="243000" />
-      <workItem from="1762374260470" duration="575000" />
+      <workItem from="1762374260470" duration="973000" />
+      <workItem from="1762375247057" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -107,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762278633441</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementat clasa Produs">
+      <option name="closed" value="true" />
+      <created>1762374902287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762374902287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Implementat clasa Produs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementat clasa Produs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
