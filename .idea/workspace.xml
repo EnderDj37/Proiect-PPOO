@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Initial commit" />
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +23,12 @@
   }
 }</component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="aebb4cc3-2735-48d2-aa43-2ad41d512fcb" />
+    <option name="defaultAccountId" value="99e45692-a02a-4ad5-ae77-5d32fa6677c5" />
   </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/EnderDj37/Proiect-PPOO.git&quot;,
-    &quot;accountId&quot;: &quot;aebb4cc3-2735-48d2-aa43-2ad41d512fcb&quot;
+    &quot;accountId&quot;: &quot;99e45692-a02a-4ad5-ae77-5d32fa6677c5&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -34,11 +37,13 @@
 }</component>
   <component name="ProjectId" id="351X0kSKtGUnk8JmpWQEOqtbfKO" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -61,7 +66,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "settings.sync",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -83,6 +88,8 @@
       <updated>1762278331324</updated>
       <workItem from="1762278332825" duration="390000" />
       <workItem from="1762278796411" duration="408000" />
+      <workItem from="1762373992776" duration="243000" />
+      <workItem from="1762374260470" duration="575000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -120,5 +127,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
