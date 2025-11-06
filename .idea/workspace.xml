@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugare Creare/Citire">
-      <change afterPath="$PROJECT_DIR$/Proiect-PPOO.iml" afterDir="false" />
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugare Update/Delete in Service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProdusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProdusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,9 @@
     &quot;accountId&quot;: &quot;99e45692-a02a-4ad5-ae77-5d32fa6677c5&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -180,7 +182,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implementat clasa Produs" />
     <MESSAGE value="Adaugare Creare/Citire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugare Creare/Citire" />
+    <MESSAGE value="Adaugare Update/Delete in Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaugare Update/Delete in Service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
