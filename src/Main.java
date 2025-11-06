@@ -29,24 +29,26 @@ public class Main {
                     meniuStergeProdus();
                     break;
                 case 0:
+                    System.out.println("Se salveaza datele...");
+                    service.salveazaDate();
                     ruleaza = false;
                     break;
                 default:
                     System.out.println("Optiune invalida");
             }
         }
-        System.out.println("Application stopping");
+        System.out.println("Aplicatia se inchide");
         scanner.close();
     }
     private static void afiseazaMeniu() {
-        System.out.println("\n--- MENIU PRINCIPAL ---");
-        System.out.println("1. Adaugă produs");
-        System.out.println("2. Afișează toate produsele");
-        System.out.println("3. Caută produs după ID");
-        System.out.println("4. Actualizează produs");
-        System.out.println("5. Șterge produs");
-        System.out.println("0. Ieșire");
-        System.out.print("Alegeți o opțiune: ");
+        System.out.println("\nMeniu Principal");
+        System.out.println("1.Adauga produs");
+        System.out.println("2.Afiseaza toate produsele");
+        System.out.println("3.Cauta produs dupa ID");
+        System.out.println("4.Actualizeaza produs");
+        System.out.println("5.Sterge produs");
+        System.out.println("0.Iesire");
+        System.out.print("Alegeti o optiune: ");
     }
 
     private static void meniuAdaugaProduse() {
@@ -63,7 +65,7 @@ public class Main {
     }
 
     private static void meniuAfiseazaToateProdusele() {
-        System.out.println("\n Afiseaza toate produsele");
+        System.out.println("\nAfiseaza toate produsele");
         List<Produs> produse = service.getProduse();
         if(produse.isEmpty()) {
             System.out.println("Nu exista produse!");
@@ -75,7 +77,7 @@ public class Main {
     }
 
     private static void meniuAfiseazaProdusDupaId() {
-        System.out.println("\n Afiseaza produs dupa ID");
+        System.out.println("\nCauta produs dupa ID");
         System.out.println("Introduceti ID-ul:");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -89,7 +91,7 @@ public class Main {
     }
 
     private static void meniuActualizeazaProdus() {
-        System.out.println("\n Actualizeaza produsul");
+        System.out.println("\nActualizeaza produs");
         System.out.print("Introduceti ID-ul produsului pentru actualizare: ");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -119,7 +121,7 @@ public class Main {
     }
 
     private static void meniuStergeProdus() {
-        System.out.println("\nStergere produs");
+        System.out.println("\nSterge produs");
         System.out.println("Introduceti id-ul produsului pe care doriti sa-l stergeti: ");
         int id = scanner.nextInt();
         scanner.nextLine();

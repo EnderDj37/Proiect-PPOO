@@ -1,4 +1,8 @@
-public class Produs {
+import java.io.Serializable;
+
+public class Produs implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private int id;
     private String nume;
@@ -18,31 +22,24 @@ public class Produs {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getNume() {
         return nume;
     }
-
     public void setNume(String nume) {
         this.nume = nume;
     }
-
     public double getPret() {
         return pret;
     }
-
     public void setPret(double pret) {
         this.pret = pret;
     }
-
     public int getStoc() {
         return stoc;
     }
-
     public void setStoc(int stoc) {
         this.stoc = stoc;
     }
