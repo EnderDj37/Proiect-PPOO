@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,8 +11,7 @@ public class Main {
         boolean ruleaza = true;
         while (ruleaza) {
             afiseazaMeniu();
-            int optiune = scanner.nextInt();
-            scanner.nextLine();
+            int optiune = citesteIntValid("Alegeti o optiune: ");
             switch (optiune){
                 case 1:
                     meniuAdaugaProduse();
@@ -40,6 +40,34 @@ public class Main {
         System.out.println("Aplicatia se inchide");
         scanner.close();
     }
+    private static int citesteIntValid(String prompt) {
+        while (true) {
+            try {
+                System.out.println(prompt);
+                int input = scanner.nextInt();
+                scanner.nextLine();
+                return input;
+            } catch (InputMismatchException e) {
+                System.out.println("Trebuie sa introduceti un numar intreg");
+                scanner.nextLine();
+            }
+        }
+    }
+
+    private static double citesteDoubleValid(String prompt) {
+        while (true) {
+            try {
+                System.out.println(prompt);
+                double input = scanner.nextDouble();
+                scanner.nextLine();
+                return input;
+            } catch (InputMismatchException e) {
+                System.out.println("Trebuie sa introduceti un numar");
+                scanner.nextLine();
+            }
+        }
+    }
+
     private static void afiseazaMeniu() {
         System.out.println("\nMeniu Principal");
         System.out.println("1.Adauga produs");
@@ -55,13 +83,14 @@ public class Main {
         System.out.println("\nAdauga produs nou");
         System.out.print("Nume: ");
         String nume = scanner.nextLine();
-        System.out.println("Pret: ");
-        double pret = scanner.nextDouble();
-        System.out.println("Stoc: ");
-        int stoc = scanner.nextInt();
-
-        service.adaugaProdus(nume, pret, stoc);
-        System.out.println("Produs adaugat!");
+        double pret = citesteDoubleValid("Pret: ");
+        int stoc = citesteIntValid("Stoc: ");
+        try{
+            service.adaugaProdus(nume, pret, stoc);
+            System.out.println("Produs adaugat!");
+        } catch (ValidareException e) {
+            System.out.println("Eroare la adaugare: " + e.getMessage());
+        }
     }
 
     private static void meniuAfiseazaToateProdusele() {
@@ -78,9 +107,7 @@ public class Main {
 
     private static void meniuAfiseazaProdusDupaId() {
         System.out.println("\nCauta produs dupa ID");
-        System.out.println("Introduceti ID-ul:");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = citesteIntValid("Introduceti ID-ul");
 
         Produs p = service.getProdusDupaId(id);
         if (p!=null) {
@@ -92,9 +119,7 @@ public class Main {
 
     private static void meniuActualizeazaProdus() {
         System.out.println("\nActualizeaza produs");
-        System.out.print("Introduceti ID-ul produsului pentru actualizare: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = citesteIntValid("Introduceti ID-ul produsului pentru actualizare");
 
         Produs produsExistent = service.getProdusDupaId(id);
         if(produsExistent == null){
@@ -107,27 +132,21 @@ public class Main {
         if(numeNou.isEmpty()){
             numeNou=produsExistent.getNume();
         }
-        System.out.println("Pret nou (actual: " + produsExistent.getPret() + "): ");
-        double pretNou = scanner.nextDouble();
-
-        System.out.println("Stoc nou (actual: " + produsExistent.getStoc() + "): ");
-        int stocNou = scanner.nextInt();
-        scanner.nextLine();
-
-        boolean succes = service.updateProdus(id, numeNou, pretNou, stocNou);
-        if (succes) {
+        double pretNou = citesteDoubleValid("Pret nou (actual: " + produsExistent.getPret() + "): ");
+        int stocNou = citesteIntValid("Stoc nou (actual: " + produsExistent.getStoc() + "): ");
+        try {
+            service.updateProdus(id, numeNou, pretNou, stocNou);
             System.out.println("Produs actualizat cu succes!");
+        } catch (ValidareException e) {
+            System.out.println("Eroare la actualizare." + e.getMessage());
         }
     }
 
     private static void meniuStergeProdus() {
         System.out.println("\nSterge produs");
-        System.out.println("Introduceti id-ul produsului pe care doriti sa-l stergeti: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = citesteIntValid("Introduceti id-ul produsului pe care doriti sa-l stergeti: ");
 
-        boolean succes = service.stergeProdus(id);
-        if(succes) {
+        if(service.stergeProdus(id)) {
             System.out.println("Produsul a fost sters cu succes!");
         } else {
             System.out.println("Eroare la stergere, id-ul nu a fost gasit");

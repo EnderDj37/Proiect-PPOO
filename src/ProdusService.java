@@ -37,7 +37,7 @@ public class ProdusService {
         }
     }
 
-    public void  salveazaDate() {
+    public void salveazaDate() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(NUME_FISIER))) {
             oos.writeObject(this.listaProduse);
             System.out.println("Datele au fost salvate cu succes in " + NUME_FISIER);
@@ -50,7 +50,17 @@ public class ProdusService {
         return this.idContor;
     }
 
-    public void adaugaProdus(String nume, double pret, int stoc) {
+    public void adaugaProdus(String nume, double pret, int stoc) throws ValidareException {
+        if (nume == null || nume.trim().isEmpty()) {
+            throw new ValidareException("Numele produsului nu poate fi gol.");
+        }
+        if (pret <= 0 ) {
+            throw new ValidareException("Pretul nu poate fi un numar negativ.");
+        }
+        if(stoc <0 ) {
+            throw new ValidareException("Stocul nu poate fi negativ");
+        }
+
         int idNou = genereazaIdNou();
         Produs produsNou = new Produs(idNou, nume, pret, stoc);
         listaProduse.add(produsNou);
@@ -70,7 +80,16 @@ public class ProdusService {
         return null;
     }
 
-    public boolean updateProdus(int id, String numeNou, double pretNou, int stocNou) {
+    public boolean updateProdus(int id, String numeNou, double pretNou, int stocNou) throws ValidareException{
+        if (numeNou == null || numeNou.trim().isEmpty()) {
+            throw new ValidareException("Numele produsului nu poate fi gol.");
+        }
+        if (pretNou <= 0) {
+            throw new ValidareException("Pretul nu poate fi negativ.");
+        }
+        if (stocNou < 0 ) {
+            throw new ValidareException("Stocul trebuie sa fie pozitiv.");
+        }
         Produs produsDeActualizat = getProdusDupaId(id);
         if(produsDeActualizat != null) {
         produsDeActualizat.setNume(numeNou);

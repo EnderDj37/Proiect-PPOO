@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Meniu basic in consola">
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Implementare Serialization pentru persistenta date">
+      <change afterPath="$PROJECT_DIR$/src/ValidareException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProdusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProdusService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,7 +194,8 @@
     <MESSAGE value="Adaugare Creare/Citire" />
     <MESSAGE value="Adaugare Update/Delete in Service" />
     <MESSAGE value="Meniu basic in consola" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meniu basic in consola" />
+    <MESSAGE value="Implementare Serialization pentru persistenta date" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementare Serialization pentru persistenta date" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
