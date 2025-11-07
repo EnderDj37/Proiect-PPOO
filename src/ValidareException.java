@@ -10,6 +10,10 @@ public class ValidareException extends Exception {
      * @param mesaj Mesajul de eroare care descrie problema de validare.
      */
     public ValidareException(String mesaj) {
+        /**
+         * Constructor pentru exceptia de validare.
+         * @param mesaj Mesajul de eroare care descrie problema de validare.
+         */
         super(mesaj);
     }
 }
