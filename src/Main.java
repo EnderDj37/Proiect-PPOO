@@ -11,6 +11,7 @@ public class Main {
         boolean ruleaza = true;
         while (ruleaza) {
             afiseazaMeniu();
+
             int optiune = citesteIntValid("Alegeti o optiune: ");
             switch (optiune){
                 case 1:
@@ -27,6 +28,9 @@ public class Main {
                     break;
                 case 5:
                     meniuStergeProdus();
+                    break;
+                case 6:
+                    meniuStatistici();
                     break;
                 case 0:
                     System.out.println("Se salveaza datele...");
@@ -75,6 +79,7 @@ public class Main {
         System.out.println("3.Cauta produs dupa ID");
         System.out.println("4.Actualizeaza produs");
         System.out.println("5.Sterge produs");
+        System.out.println("6.Statistici");
         System.out.println("0.Iesire");
         System.out.print("Alegeti o optiune: ");
     }
@@ -151,5 +156,46 @@ public class Main {
         } else {
             System.out.println("Eroare la stergere, id-ul nu a fost gasit");
         }
+    }
+
+    private static void meniuStatistici() {
+        System.out.println("\nStatistici");
+        List<Produs> produse = service.getProduse();
+
+        if(produse.isEmpty()) {
+            System.out.println("Nu exista produse");
+            return;
+        }
+
+        int[] contorCategoriiPret = new int[3];
+        int[] contorStoc = new int[2];
+
+        double valoareTotalaStoc = 0.0;
+
+        for(Produs p : produse) {
+            if (p.getPret() < 50) {
+                contorCategoriiPret[0]++;
+            } else if (p.getPret() <= 200) {
+                contorCategoriiPret[1]++;
+            } else {
+                contorCategoriiPret[2]++;
+            }
+
+            if (p.getStoc() < 10 && p.getStoc() >0) {
+                contorStoc[0]++;
+            } else {
+                contorStoc[1]++;
+            }
+            valoareTotalaStoc += p.getStoc() * p.getPret();
+        }
+        System.out.println("Numar total de produse: " + produse.size());
+        System.out.println("Valoarea totala a stocului: " + valoareTotalaStoc);
+        System.out.println("\nCategorii de pret");
+        System.out.println("Produse sub 50 de lei: " + contorCategoriiPret[0]);
+        System.out.println("Produse intre 50 si 200 de lei: " + contorCategoriiPret[1]);
+        System.out.println("Produse peste 200 de lei: " + contorCategoriiPret[2]);
+        System.out.println("\nNivel stoc");
+        System.out.println("Sub 10 bucati in stoc: " + contorStoc[0]);
+        System.out.println("Peste 10 bucati in stoc: " + contorStoc[1]);
     }
 }
