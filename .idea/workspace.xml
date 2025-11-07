@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat GUI Swing">
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat Add produs in GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +198,8 @@
     <MESSAGE value="Adaugat input validation" />
     <MESSAGE value="Adaugat HashMap si meniu de statistici(utilizand vectori)" />
     <MESSAGE value="Adaugat GUI Swing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugat GUI Swing" />
+    <MESSAGE value="Adaugat Add produs in GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaugat Add produs in GUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

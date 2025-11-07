@@ -12,14 +12,14 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.List;
 
 public class GUI extends JFrame {
     private ProdusService service;
-
     private JTable tabelProduse;
     private DefaultTableModel modelTabel;
-
     private JTextField txtNume;
     private JTextField txtPret;
     private JTextField txtStoc;
@@ -28,11 +28,20 @@ public class GUI extends JFrame {
     public GUI() {
         this.service = new ProdusService();
         setTitle("Magazin online");
-        setSize(600,400);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(800,500);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setLocationRelativeTo(null);
-
         setLayout(new BorderLayout());
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.out.println("Fereastra GUI se inchide.");
+                service.salveazaDate();
+                dispose();
+                System.exit(0);
+            }
+        });
 
         initializeazaTabel();
         initializeazaFromularAdaugare();

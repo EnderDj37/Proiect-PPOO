@@ -7,14 +7,14 @@ public class Main {
     private static ProdusService service;
     private static Scanner scanner;
 
-    public static void main (String[] args) {
+    static void main () {
         Scanner scannerInitial = new Scanner(System.in);
         System.out.println("Magazin online");
         System.out.println("1.Mod consola");
         System.out.println("2.Mod GUI");
         System.out.print("Alegeti modul de operare: ");
 
-        int mod = 0;
+        int mod;
         try {
             mod = scannerInitial.nextInt();
         } catch (InputMismatchException e) {
@@ -114,7 +114,6 @@ public class Main {
         System.out.println("5.Sterge produs");
         System.out.println("6.Statistici");
         System.out.println("0.Iesire");
-        System.out.print("Alegeti o optiune: ");
     }
 
     private static void meniuAdaugaProduse() {
@@ -221,8 +220,9 @@ public class Main {
             }
             valoareTotalaStoc += p.getStoc() * p.getPret();
         }
+
         System.out.println("Numar total de produse: " + produse.size());
-        System.out.println("Valoarea totala a stocului: " + valoareTotalaStoc);
+        System.out.println("Valoarea totala a stocului: " + String.format("%.2f", valoareTotalaStoc));
         System.out.println("\nCategorii de pret");
         System.out.println("Produse sub 50 de lei: " + contorCategoriiPret[0]);
         System.out.println("Produse intre 50 si 200 de lei: " + contorCategoriiPret[1]);

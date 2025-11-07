@@ -22,9 +22,6 @@ public class Produs implements Serializable {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getNume() {
         return nume;
     }
@@ -47,6 +44,6 @@ public class Produs implements Serializable {
 
     @Override
     public String toString() {
-        return "Produs [ID=" + id + ", Nume=" + nume + ", Pret=" + pret + ", Stoc=" + stoc + "]";
+        return "ID=" + id + ", Nume=" + nume + ", Pret=" + pret + ", Stoc=" + stoc;
     }
 }
