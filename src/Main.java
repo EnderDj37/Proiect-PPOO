@@ -3,16 +3,31 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Permite utilizatorului sa selecteze intre cele 2 moduri ale aplicatiei
+ * 1. Modul consola
+ * 2. Modul GUI
+ * @author Mihaita Eduard-Mihai
+ */
 public class Main {
+    /**
+     * Instanta serviciului, utilizata de toate functiile
+     */
     private static ProdusService service;
+    /**
+     * Scanner-ul utilizat de toate functiile
+     */
     private static Scanner scanner;
 
+    /**
+     * Afiseaza selectia modurilor de operare
+     */
     static void main () {
         Scanner scannerInitial = new Scanner(System.in);
         System.out.println("Magazin online");
         System.out.println("1.Mod consola");
         System.out.println("2.Mod GUI");
-        System.out.print("Alegeti modul de operare: ");
+        System.out.print("Alegeti modul dorit: ");
 
         int mod;
         try {
@@ -40,6 +55,10 @@ public class Main {
         }
     }
 
+    /**
+     * Contine logica principala pentru modul consola
+     * Ruleaza pana cand utilizatorul introduce optiunea '0'
+     */
     private static void ruleazaConsola() {
         boolean ruleaza = true;
         while (ruleaza) {
@@ -77,6 +96,12 @@ public class Main {
         System.out.println("Aplicatia se inchide");
     }
 
+    /**
+     * Metoda ajutatoare pentru a citi un INT valid
+     * Gestioneaza {@link InputMismatchException} si cere un input pana primeste unul valid
+     * @param prompt Mesajul afisat utilzatorului
+     * @return Numarul intreg citit
+     */
     private static int citesteIntValid(String prompt) {
         while (true) {
             try {
@@ -91,6 +116,12 @@ public class Main {
         }
     }
 
+    /**
+     * Metoda ajutatoare pentru a citi un Double valid
+     * Gestioneaza {@link InputMismatchException} si cere un input pana primeste unul valid
+     * @param prompt Mesajul afisat utilzatorului
+     * @return Numarul double citit
+     */
     private static double citesteDoubleValid(String prompt) {
         while (true) {
             try {
@@ -105,17 +136,24 @@ public class Main {
         }
     }
 
+    /**
+     * Afiseaza meniul principal in consola
+     */
     private static void afiseazaMeniu() {
         System.out.println("\nMeniu Principal");
-        System.out.println("1.Adauga produs");
-        System.out.println("2.Afiseaza toate produsele");
-        System.out.println("3.Cauta produs dupa ID");
-        System.out.println("4.Actualizeaza produs");
-        System.out.println("5.Sterge produs");
-        System.out.println("6.Statistici");
-        System.out.println("0.Iesire");
+        System.out.println("1. Adauga produs");
+        System.out.println("2. Afiseaza toate produsele");
+        System.out.println("3. Cauta produs dupa ID");
+        System.out.println("4. Actualizeaza produs");
+        System.out.println("5. Sterge produs");
+        System.out.println("6. Statistici");
+        System.out.println("0. Iesire");
     }
 
+    /**
+     * Meniul de adaugare a produsului
+     * Preia inputul si apeleaza serviciul
+     */
     private static void meniuAdaugaProduse() {
         System.out.println("\nAdauga produs nou");
         System.out.print("Nume: ");
@@ -130,6 +168,9 @@ public class Main {
         }
     }
 
+    /**
+     * Meniul de afisare a tuturor produselor
+     */
     private static void meniuAfiseazaToateProdusele() {
         System.out.println("\nAfiseaza toate produsele");
         List<Produs> produse = service.getProduse();
@@ -142,6 +183,9 @@ public class Main {
         }
     }
 
+    /**
+     * Meniul de afisare a unui produs cautat dupa ID
+     */
     private static void meniuAfiseazaProdusDupaId() {
         System.out.println("\nCauta produs dupa ID");
         int id = citesteIntValid("Introduceti ID-ul");
@@ -154,6 +198,9 @@ public class Main {
         }
     }
 
+    /**
+     * Meniul de actualizare a unui produs
+     */
     private static void meniuActualizeazaProdus() {
         System.out.println("\nActualizeaza produs");
         int id = citesteIntValid("Introduceti ID-ul produsului pentru actualizare");
@@ -179,6 +226,9 @@ public class Main {
         }
     }
 
+    /**
+     * Meniul de stergere a produsului
+     */
     private static void meniuStergeProdus() {
         System.out.println("\nSterge produs");
         int id = citesteIntValid("Introduceti id-ul produsului pe care doriti sa-l stergeti: ");
@@ -190,6 +240,10 @@ public class Main {
         }
     }
 
+    /**
+     * Meniul de statistici
+     * Foloseste vectori pentru cerinta 3
+     */
     private static void meniuStatistici() {
         System.out.println("\nStatistici");
         List<Produs> produse = service.getProduse();
