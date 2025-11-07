@@ -16,6 +16,11 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.List;
 
+/**
+ * Cerinta 7
+ * Implementeaza interfata grafica a aplicatiei utilizand Java Swing
+ * @author Mihaita Eduard-Mihai
+ */
 public class GUI extends JFrame {
     private ProdusService service;
     private JTable tabelProduse;
@@ -25,6 +30,9 @@ public class GUI extends JFrame {
     private JTextField txtStoc;
     private JButton btnAdauga;
 
+    /**
+     * Constructorul ferestrei de afisare
+     */
     public GUI() {
         this.service = new ProdusService();
         setTitle("Magazin online");
@@ -34,6 +42,11 @@ public class GUI extends JFrame {
         setLayout(new BorderLayout());
 
         addWindowListener(new WindowAdapter() {
+            /**
+             * Apelat cand utilizatorul inchide fereastra
+             * Salveaza datele inainte de inchidere
+             * @param e the event to be processed
+             */
             @Override
             public void windowClosing(WindowEvent e) {
                 System.out.println("Fereastra GUI se inchide.");
@@ -48,9 +61,16 @@ public class GUI extends JFrame {
         refreshTabel();
     }
 
+    /**
+     * Initializeaza componenta JTable
+     * Tabelul este plasat intr-un JScrollPanel
+     */
     private void initializeazaTabel() {
         String[] coloane = {"ID", "Nume", "Pret", "Stoc"};
         modelTabel = new DefaultTableModel(coloane, 0) {
+            /**
+             * Impiedica editarea celulei direct in tabel
+             */
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false;
@@ -60,6 +80,9 @@ public class GUI extends JFrame {
         add(new JScrollPane(tabelProduse), BorderLayout.CENTER);
     }
 
+    /**
+     * Initializeaza partea de adaugare din interfata
+     */
     private void initializeazaFromularAdaugare() {
         JPanel panouAdaugare = new JPanel(new FlowLayout());
 
@@ -79,6 +102,10 @@ public class GUI extends JFrame {
         panouAdaugare.add(btnAdauga);
 
         btnAdauga.addActionListener(new ActionListener() {
+            /**
+             * Apelat cand se apasa butonul "Adauga produs"
+             * @param e the event to be processed
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
                 adaugaProdusDinFormular();
@@ -87,6 +114,11 @@ public class GUI extends JFrame {
         add(panouAdaugare, BorderLayout.SOUTH);
     }
 
+    /**
+     * Adaugarea produsului folosing interfata grafica
+     * Preia datele din JTextField si apeleaza {@link ProdusService}
+     * Gestioneaza exceptiile folosing {@link JOptionPane}
+     */
     private void adaugaProdusDinFormular() {
         try {
             String nume = txtNume.getText();
@@ -122,12 +154,18 @@ public class GUI extends JFrame {
         }
     }
 
+    /**
+     * Metoda ajutatoare pentru a goli formular dupa ce datele sunt adaugate
+     */
     private void curataFormular() {
         txtNume.setText("");
         txtPret.setText("");
         txtStoc.setText("");
     }
 
+    /**
+     * Refresh la tabelul din {@link JTable} pentru a include datele noi
+     */
     private void refreshTabel() {
         modelTabel.setRowCount(0);
         List<Produs> produse = service.getProduse();

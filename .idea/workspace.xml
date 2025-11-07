@@ -4,11 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat Add produs in GUI">
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat JavaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/GUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/Produs.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Produs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/ProdusService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/ProdusService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/ValidareException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/ValidareException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/Produs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/Produs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/ProdusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/ProdusService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect-PPOO/ValidareException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect-PPOO/ValidareException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produse.dat" beforeDir="false" afterPath="$PROJECT_DIR$/produse.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProdusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProdusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidareException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ValidareException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +117,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -189,6 +227,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implementat clasa Produs" />
     <MESSAGE value="Adaugare Creare/Citire" />
@@ -199,7 +239,9 @@
     <MESSAGE value="Adaugat HashMap si meniu de statistici(utilizand vectori)" />
     <MESSAGE value="Adaugat GUI Swing" />
     <MESSAGE value="Adaugat Add produs in GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugat Add produs in GUI" />
+    <MESSAGE value="Fixat add product in GUI" />
+    <MESSAGE value="Adaugat JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaugat JavaDoc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
