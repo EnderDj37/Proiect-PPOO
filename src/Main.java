@@ -1,13 +1,46 @@
+import javax.swing.SwingUtilities;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static ProdusService service = new ProdusService();
-    private static Scanner scanner = new Scanner(System.in);
+    private static ProdusService service;
+    private static Scanner scanner;
 
     public static void main (String[] args) {
-        System.out.println("App starting");
+        Scanner scannerInitial = new Scanner(System.in);
+        System.out.println("Magazin online");
+        System.out.println("1.Mod consola");
+        System.out.println("2.Mod GUI");
+        System.out.print("Alegeti modul de operare: ");
+
+        int mod = 0;
+        try {
+            mod = scannerInitial.nextInt();
+        } catch (InputMismatchException e) {
+            mod = 1;
+        }
+
+        if (mod == 2) {
+            System.out.println("GUI Starting");
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    GUI fereastraGUI = new GUI();
+                    fereastraGUI.setVisible(true);
+                }
+            });
+        } else {
+            System.out.println("Console starting");
+            service = new ProdusService();
+            scanner = new Scanner(System.in);
+
+            ruleazaConsola();
+            scanner.close();
+        }
+    }
+
+    private static void ruleazaConsola() {
         boolean ruleaza = true;
         while (ruleaza) {
             afiseazaMeniu();
@@ -42,8 +75,8 @@ public class Main {
             }
         }
         System.out.println("Aplicatia se inchide");
-        scanner.close();
     }
+
     private static int citesteIntValid(String prompt) {
         while (true) {
             try {

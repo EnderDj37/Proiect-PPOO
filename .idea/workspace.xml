@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat input validation">
+    <list default="true" id="f2df7b46-f7f0-4d28-9780-53815256debd" name="Changes" comment="Adaugat HashMap si meniu de statistici(utilizand vectori)">
+      <change afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProdusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProdusService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,8 @@
     <MESSAGE value="Meniu basic in consola" />
     <MESSAGE value="Implementare Serialization pentru persistenta date" />
     <MESSAGE value="Adaugat input validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugat input validation" />
+    <MESSAGE value="Adaugat HashMap si meniu de statistici(utilizand vectori)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaugat HashMap si meniu de statistici(utilizand vectori)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
